@@ -1,0 +1,44 @@
+﻿<Window x:Class="TVP.CollaborativeEditor.Views.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:TVP.CollaborativeEditor.ViewModels"
+        xmlns:avalon="http://icsharpcode.net/sharpdevelop/avalonedit"
+        xmlns:te="clr-namespace:TextEditLib;assembly=TextEditLib"
+        xmlns:models="clr-namespace:TVP.CollaborativeEditor.Models"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance vm:EditWindowViewModel, IsDesignTimeCreatable=True}"
+        Title="Editor" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <Button Width="20" Height="20" Command="{Binding CommandNewWindow}" ToolTip="Dodaj nowe okno">
+                
+            </Button>
+            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+            <Label>Nazwa użytkownika</Label>
+            <TextBox Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" Width="100" VerticalAlignment="Center"/>
+        </StackPanel>
+        <ListView Grid.Row="1" ItemsSource="{Binding Clients}">
+            <ListView.ItemTemplate>
+                <DataTemplate DataType="{x:Type models:DocumentClient}">
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <te:TextEdit Grid.Row="1" Grid.Column="1" 
+                     Document="{Binding EditDocument}" 
+                     Line="{Binding Line, Mode=OneWayToSource}"
+                     Column="{Binding Column, Mode=OneWayToSource}"
+                     />
+
+    </Grid>
+</Window>

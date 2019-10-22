@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollaborativeEditor", "CollaborativeEditor\CollaborativeEditor.csproj", "{883AF187-A08C-4925-B701-A2AA23DBD4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditLib", "TextEditLib\TextEditLib.csproj", "{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E091902-4F74-4A2A-82B6-F088061DBDBB}
+	EndGlobalSection
+EndGlobal
