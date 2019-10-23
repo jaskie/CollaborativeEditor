@@ -1,5 +1,8 @@
 /.vs
-
-/CollaborativeEditor/bin
-/CollaborativeEditor/obj
 /packages
+/DocumentClient/bin
+/DocumentClient/obj
+/DocumentServer/bin
+/DocumentServer/obj
+/EditorInterfaces/bin
+/EditorInterfaces/obj

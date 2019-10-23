@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollaborativeEditor", "CollaborativeEditor\CollaborativeEditor.csproj", "{883AF187-A08C-4925-B701-A2AA23DBD4DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentClient", "DocumentClient\DocumentClient.csproj", "{883AF187-A08C-4925-B701-A2AA23DBD4DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditLib", "TextEditLib\TextEditLib.csproj", "{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentModelRPC", "submodules\ComponentModelRPC\ComponentModelRPC\ComponentModelRPC.csproj", "{15324B69-7D18-49F3-9141-B024079356E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentServer", "DocumentServer\DocumentServer.csproj", "{1888B51B-8CD4-4EBC-BA32-ACE4EA8D2246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorCommon", "EditorCommon\EditorCommon.csproj", "{688A1BFF-78C0-4648-BE33-87994C180282}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{883AF187-A08C-4925-B701-A2AA23DBD4DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4954411-B4DD-4BF4-8FCB-C99B8BD6A3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15324B69-7D18-49F3-9141-B024079356E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15324B69-7D18-49F3-9141-B024079356E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15324B69-7D18-49F3-9141-B024079356E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15324B69-7D18-49F3-9141-B024079356E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1888B51B-8CD4-4EBC-BA32-ACE4EA8D2246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1888B51B-8CD4-4EBC-BA32-ACE4EA8D2246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1888B51B-8CD4-4EBC-BA32-ACE4EA8D2246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1888B51B-8CD4-4EBC-BA32-ACE4EA8D2246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{688A1BFF-78C0-4648-BE33-87994C180282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688A1BFF-78C0-4648-BE33-87994C180282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688A1BFF-78C0-4648-BE33-87994C180282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{688A1BFF-78C0-4648-BE33-87994C180282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
