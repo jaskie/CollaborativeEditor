@@ -42,7 +42,7 @@ namespace DocumentServer
                     switch (lineParts[0])
                     {
                         case "quit":
-                            break;
+                            return;
                     }
             }
         }

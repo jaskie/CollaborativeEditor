@@ -13,7 +13,6 @@ namespace TVP.DocumentClient.ViewModels
     {
         private string _userName = $"client {new Random().Next()}";
         private readonly Proxy.Document _remoteDocument;
-        private readonly ObservableCollection<IDocumentClient> _clients;
         private readonly IDocumentClient _documentClient;
         private bool _isUpdateNotifying;
 
@@ -22,7 +21,7 @@ namespace TVP.DocumentClient.ViewModels
             var client = AppDataContext.Instance.RemoteClient;
             _remoteDocument = client.GetRootObject<Proxy.Document>();
             _documentClient = _remoteDocument.ClientJoin(UserName);
-            _clients = new ObservableCollection<IDocumentClient>(_remoteDocument.GetClients());
+            Clients = new ObservableCollection<IDocumentClient>(_remoteDocument.GetClients());
             _remoteDocument.ClientJoined += Document_ClientJoined;
             _remoteDocument.ClientQuited += Document_ClientQuited;
             _remoteDocument.TextChanged += Document_TextChanged;
@@ -48,7 +47,7 @@ namespace TVP.DocumentClient.ViewModels
             }
         }
 
-        public IEnumerable<IDocumentClient> Clients => _clients;
+        public IList<IDocumentClient> Clients { get; }
 
         public ICSharpCode.AvalonEdit.Document.TextDocument EditDocument { get; }
 
@@ -64,12 +63,12 @@ namespace TVP.DocumentClient.ViewModels
 
         private void Document_ClientJoined(object sender, ClientEventArgs e)
         {
-            _clients.Add(e.Client);
+            OnUiThread(() => Clients.Add(e.Client));
         }
 
         private void Document_ClientQuited(object sender, ClientEventArgs e)
         {
-            _clients.Remove(e.Client);
+            OnUiThread(() => Clients.Remove(e.Client));
         }
 
         private void Document_TextChanged(object sender, ChangeEventArgs e)

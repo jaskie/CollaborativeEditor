@@ -1,7 +1,0 @@
-C:\Projects\CollaborativeEditor\EditorInterfaces\bin\Debug\EditorInterfaces.dll
-C:\Projects\CollaborativeEditor\EditorInterfaces\bin\Debug\EditorInterfaces.pdb
-C:\Projects\CollaborativeEditor\EditorInterfaces\bin\Debug\Newtonsoft.Json.dll
-C:\Projects\CollaborativeEditor\EditorInterfaces\bin\Debug\Newtonsoft.Json.xml
-C:\Projects\CollaborativeEditor\EditorInterfaces\obj\Debug\EditorInterfaces.csproj.CopyComplete
-C:\Projects\CollaborativeEditor\EditorInterfaces\obj\Debug\EditorInterfaces.dll
-C:\Projects\CollaborativeEditor\EditorInterfaces\obj\Debug\EditorInterfaces.pdb
